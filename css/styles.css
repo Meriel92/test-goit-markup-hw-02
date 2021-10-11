@@ -30,8 +30,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* identical to box height */
-
 .list {
   padding: 0;
   margin: 0;
@@ -57,9 +55,31 @@ body {
 .accent {
   color: var(--accent-color);
 }
+
+/* Main-nav */
+
+.container-main-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
 /* site-nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-family: Roboto;
@@ -74,8 +94,20 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+/* Site-adress */
+
+.site-adress {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-adress .item + .item {
+  margin-left: 50px;
+}
 
 .site-adress .link {
+  display: flex;
+
   color: var(--primary-text-color);
   text-decoration: none;
 }
