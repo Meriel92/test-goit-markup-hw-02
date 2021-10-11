@@ -136,7 +136,7 @@ body {
 /* Section-classes */
 
 .section-classes .title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -191,21 +191,38 @@ body {
   letter-spacing: 0.03em;
 }
 .page-footer .logo {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: var(--white);
 }
 /* Portfolio */
+.button {
+  margin-top: 0;
+  margin-bottom: 8px;
 
-.filter-nav {
   color: var(--title-text-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 
-.filter-nav .link:hover,
+.filter-nav .button:hover,
 .filter-nav:focus {
   color: var(--white);
 }
 
 .section-filter .title {
   color: var(--title-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 4px;
 
   font-style: normal;
   font-weight: bold;
